@@ -1,0 +1,265 @@
+{
+    "summary": {
+        "acute_load_7d": 2541.8,
+        "chronic_load_28d": 319.3,
+        "acute_chronic_ratio": 7.96,
+        "fatigue_status": "Fatigued (overreaching)"
+    },
+    "daily_activities": [
+        {
+            "date": "2025-06-08",
+            "daily_load": 215.1,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 9.36,
+                    "duration_min": 46.56666666666667,
+                    "avg_hr": 165.0,
+                    "training_load": 215.1
+                }
+            ]
+        },
+        {
+            "date": "2025-06-13",
+            "daily_load": 42.7,
+            "activities": [
+                {
+                    "type": "Wandern",
+                    "distance_km": 1.5,
+                    "duration_min": 18.283333333333335,
+                    "avg_hr": 140.0,
+                    "training_load": 42.7
+                }
+            ]
+        },
+        {
+            "date": "2025-06-22",
+            "daily_load": 269.7,
+            "activities": [
+                {
+                    "type": "Radfahren",
+                    "distance_km": 29.77,
+                    "duration_min": 59.166666666666664,
+                    "avg_hr": 159.0,
+                    "training_load": 269.7
+                }
+            ]
+        },
+        {
+            "date": "2025-06-23",
+            "daily_load": 415.3,
+            "activities": [
+                {
+                    "type": "Radfahren",
+                    "distance_km": 40.18,
+                    "duration_min": 79.46666666666667,
+                    "avg_hr": 160.0,
+                    "training_load": 415.3
+                }
+            ]
+        },
+        {
+            "date": "2025-06-26",
+            "daily_load": 234.5,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 10.01,
+                    "duration_min": 49.166666666666664,
+                    "avg_hr": 159.0,
+                    "training_load": 234.5
+                }
+            ]
+        },
+        {
+            "date": "2025-06-27",
+            "daily_load": 433.4,
+            "activities": [
+                {
+                    "type": "Radfahren",
+                    "distance_km": 24.4,
+                    "duration_min": 50.78333333333333,
+                    "avg_hr": 159.0,
+                    "training_load": 220.7
+                },
+                {
+                    "type": "Laufen",
+                    "distance_km": 10.04,
+                    "duration_min": 54.18333333333333,
+                    "avg_hr": 151.0,
+                    "training_load": 212.7
+                }
+            ]
+        },
+        {
+            "date": "2025-06-28",
+            "daily_load": 277.9,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 13.29,
+                    "duration_min": 73.13333333333334,
+                    "avg_hr": 150.0,
+                    "training_load": 277.9
+                }
+            ]
+        },
+        {
+            "date": "2025-06-29",
+            "daily_load": 227.1,
+            "activities": [
+                {
+                    "type": "Rennradfahren",
+                    "distance_km": 20.83,
+                    "duration_min": 57.833333333333336,
+                    "avg_hr": 151.0,
+                    "training_load": 227.1
+                }
+            ]
+        },
+        {
+            "date": "2025-07-02",
+            "daily_load": 394.3,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 15.69,
+                    "duration_min": 80.15,
+                    "avg_hr": 157.0,
+                    "training_load": 394.3
+                }
+            ]
+        },
+        {
+            "date": "2025-07-03",
+            "daily_load": 212.3,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 9.27,
+                    "duration_min": 44.35,
+                    "avg_hr": 167.0,
+                    "training_load": 212.3
+                }
+            ]
+        },
+        {
+            "date": "2025-07-04",
+            "daily_load": 170.4,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 9.07,
+                    "duration_min": 50.8,
+                    "avg_hr": 148.0,
+                    "training_load": 170.4
+                }
+            ]
+        },
+        {
+            "date": "2025-07-05",
+            "daily_load": 632.0,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 23.56,
+                    "duration_min": 120.0,
+                    "avg_hr": 158.0,
+                    "training_load": 632.0
+                }
+            ]
+        },
+        {
+            "date": "2025-07-06",
+            "daily_load": 161.6,
+            "activities": [
+                {
+                    "type": "Radfahren",
+                    "distance_km": 23.51,
+                    "duration_min": 49.166666666666664,
+                    "avg_hr": 145.0,
+                    "training_load": 161.6
+                }
+            ]
+        },
+        {
+            "date": "2025-07-07",
+            "daily_load": 360.6,
+            "activities": [
+                {
+                    "type": "Virtuelles Radfahren",
+                    "distance_km": 36.06,
+                    "duration_min": 61.81666666666667,
+                    "avg_hr": null,
+                    "training_load": 360.6
+                }
+            ]
+        },
+        {
+            "date": "2025-07-10",
+            "daily_load": 419.2,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 15.21,
+                    "duration_min": 74.41666666666667,
+                    "avg_hr": 169.0,
+                    "training_load": 419.2
+                }
+            ]
+        },
+        {
+            "date": "2025-07-11",
+            "daily_load": 337.7,
+            "activities": [
+                {
+                    "type": "Radfahren",
+                    "distance_km": 38.16,
+                    "duration_min": 90.2,
+                    "avg_hr": 144.0,
+                    "training_load": 337.7
+                }
+            ]
+        },
+        {
+            "date": "2025-07-12",
+            "daily_load": 342.6,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 16.08,
+                    "duration_min": 95.16666666666667,
+                    "avg_hr": 150.0,
+                    "training_load": 342.6
+                }
+            ]
+        },
+        {
+            "date": "2025-07-13",
+            "daily_load": 600.1,
+            "activities": [
+                {
+                    "type": "Laufen",
+                    "distance_km": 22.44,
+                    "duration_min": 114.81666666666666,
+                    "avg_hr": 160.0,
+                    "training_load": 600.1
+                }
+            ]
+        },
+        {
+            "date": "2025-07-15",
+            "daily_load": 320.0,
+            "activities": [
+                {
+                    "type": "Radfahren",
+                    "distance_km": 32.0,
+                    "duration_min": 57.81666666666667,
+                    "avg_hr": null,
+                    "training_load": 320.0
+                }
+            ]
+        }
+    ],
+    "recommendation": "You’re fatigued → Suggest easy recovery or full rest."
+}
