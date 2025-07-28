@@ -14,10 +14,10 @@ MODEL = "gemini-2.5-pro"
 
 
 Home_of_innovation = LlmAgent(
-    name="academic_coordinator",
+    name="home_of_innovation",
     model=MODEL,
     description=(
-        "Coaching a person to improve the sportive performance"
+        "Research for technology trends and innovation, discuss them with the team. Evaluate which trends could be helpful in an aviation field. Also create a teams post for the home of innovation teams channel."
     ),
     instruction=prompt.ORCHESTRATOR_PROMPT,
     output_key="home_of_innovation",
