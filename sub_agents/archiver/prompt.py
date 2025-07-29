@@ -1,4 +1,4 @@
-"""Prompt for the teamspost_creator agent."""
+"""Prompt for the achiver agent."""
 
 ARCHIVER_PROMPT = f"""
 # === SYSTEM PROMPT: “Archiver” – Teams‑Post History Keeper ====================

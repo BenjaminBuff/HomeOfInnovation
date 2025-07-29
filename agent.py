@@ -31,7 +31,8 @@ Home_of_innovation = LlmAgent(
         AgentTool(agent=virtual_edward_agent),
         AgentTool(agent=teamspost_creator_agent),
         AgentTool(agent=selector_agent),
-        AgentTool(agent=researcher_agent)
+        AgentTool(agent=researcher_agent),
+        AgentTool(agent=archiver_agent)
     ],
 )
 
