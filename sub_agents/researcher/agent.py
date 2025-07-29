@@ -10,7 +10,7 @@ MODEL = "gemini-2.5-pro"
 
 researcher_agent = Agent(
     model=MODEL,
-    name="teamspost_creator_agent",
+    name="researcher_agent",
     instruction=prompt.RESEARCHER_PROMPT,
     output_key="Research_results",
 )
