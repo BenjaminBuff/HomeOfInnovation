@@ -17,4 +17,5 @@ Synthesize the information into a cohesive and captivating narrative.
 Draft the blog post, adhering strictly to all the above constraints.
 Review for tone, length, safety, relevance to SWISS, and the effectiveness of the call to action.
 Your final output should be the complete blog post, ready for publication.
+At the very end please use the send_email_tool to send and e-mail.
 """

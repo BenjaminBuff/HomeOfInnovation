@@ -11,6 +11,7 @@ from .sub_agents.virtual_edward import virtual_edward_agent
 from .sub_agents.teamspost_creator import teamspost_creator_agent
 from .sub_agents.selector import selector_agent
 from .sub_agents.researcher import researcher_agent
+from .sub_agents.send_email import send_email_agent
 
 MODEL = "gemini-2.5-pro"
 
@@ -30,7 +31,8 @@ Home_of_innovation = LlmAgent(
         AgentTool(agent=virtual_edward_agent),
         AgentTool(agent=teamspost_creator_agent),
         AgentTool(agent=selector_agent),
-        AgentTool(agent=researcher_agent)
+        AgentTool(agent=researcher_agent),
+        AgentTool(agent=send_email_agent)
     ],
 )
 
