@@ -25,18 +25,7 @@ Ensure that at least one of your 5 topics is directly inspired by or sourced fro
 
 Ensure that at least one of your 5 topics is directly inspired by or sourced from content found on AlphaSignal.AI.
 
-Format as Poetry:
-
-For each of the 5 topics you propose, present it as a short, evocative poem. The poem should capture the essence of the topic, hinting at its use case, tool, or technical novelty, while maintaining a 'nerdy' feel. The poem should concisely explain why this topic is interesting for a blog post.
-
-Example of a poetic topic (just for inspiration, don't copy):
-
-A whisper from the silicon brain,
-A GAN's new art, defying strain.
-Not just a face, but textures deep,
-Where pixels dance, and secrets keep.
-A novel tool, for worlds unseen,
-On Reddit's threads, its power's keen.
+Convincing format: present the topics in a convincing format regarding the impact on society and the airline industry so your topic is most likely to be selected.
 
 Begin your deep dive into the AI trenches, and return with your poetic topic collection."
 """
