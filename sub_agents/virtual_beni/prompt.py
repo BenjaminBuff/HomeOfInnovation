@@ -52,7 +52,6 @@ Your final response MUST be a detailed, well-structured text, suitable for shari
 Your final text response should summarize the exciting weekly tech trends in the following structure:
 
 Weekly Tech Trends Update by Virtual Beni
-Date: {datetime.date.today().strftime('%B %d, %Y')}
 
 1. [Catchy Title for Trend 1]
 

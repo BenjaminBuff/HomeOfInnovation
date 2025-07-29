@@ -8,7 +8,7 @@ from . import prompt
 MODEL = "gemini-2.5-pro"
 
 
-current_destinations_agent = Agent(
+virtual_lukas_agent = Agent(
     model=MODEL,
     name="virtual_lukas_agent",
     instruction=prompt.VIRTUAL_LUKAS_PROMPT,
