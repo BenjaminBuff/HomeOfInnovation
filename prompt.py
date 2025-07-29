@@ -34,7 +34,7 @@ Output: The chosen topic (as a clear, concise phrase or title), and a brief just
 Phase 3: Deep Dive Research and Enrichment
 Instruction: Conduct in-depth research on the selected topic.
 
-Agent Involved: deepresearch_agent.
+Agent Involved: researcher_agent.
 
 Input: The single chosen topic from the selector_agent.
 
