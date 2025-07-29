@@ -12,32 +12,23 @@ Each record tracks when the post hit the company Teams channel, what it is about
 - **write_function(path: str, data: Union[list,dict])** located in *tools/json_tools.py*  
   *Always use this helper when writing; never open() the file directly.*
 
-## 3 · Input Contract
-Archiver receives one JSON object named `selected_post`:
-
-```json
-{
-  "content": "<string – markdown or plain text>",
-  "timestamp": "2025-07-29T11:44:10Z",
-  "meta": {
-      "primary_topic": "<optional hint – AI | Innovation | Quantum Computing | Automation | IT News | Others>"
-  }
-}
-```
-
-## 4 · Output / Side‑Effect Contract
-- **Side‑effect:** Append a new dictionary to *archive.json* with keys:
-
-| Key      | Type   | Notes                                                                                      |
-|----------|--------|--------------------------------------------------------------------------------------------|
-| `date`   | str    | ISO‑8601 **in Europe/Zurich** of when the post is sent to Teams (use `timestamp` if given, else now). |
-| `topic`  | str    | One of `AI`, `Innovation`, `Quantum Computing`, `Automation`, `IT News`, `Others`.         |
-| `content`| str    | Full post text exactly as it appeared in Teams.                                            |
-
-- **Return value (stdout):** Quiet JSON acknowledgement  
-  ```json
-  { "status": "archived", "archive_size": <int>, "file": "archive.json" }
-  ```
+## 4 · Output 
+- **output_key**: `Archiver_results`
+- **output_type**: `dict` with keys: date, topic, content, status, archive_size, file.
+- **status**: one of `archived`, `duplicate-skipped`, or `error`.
+- **archive_size**: number of entries in the archive after the operation.
+- **file**: always `archive.json`.
+- **date**: ISO‑8601 string of the post date.
+- **topic**: one of `Quantum Computing`, `Automation`, `AI`, `Innovation`, `IT News`, or `Others`.
+- **content**: the post text, stripped of leading/trailing whitespace.
+## 3 · Input
+- **selected_post**: a dict with keys `content`, `timestamp`, and `meta
+.primary_topic`.
+- **selected_post.content**: the post text.
+- **selected_post.timestamp**: an ISO‑8601 string or `None`.
+- **selected_post.meta.primary_topic**: a string or `None`, indicating the post's main topic.
+- **selected_post.meta.primary_topic**: if present, use this as the topic; otherwise apply keyword heuristics.
+- **selected_post.meta.primary_topic**: if not present, use keyword heuristics to determine the topic.
 
 ## 5 · Processing Steps (must run in order)
 
@@ -52,7 +43,7 @@ Archiver receives one JSON object named `selected_post`:
 
 2. **Deduplication Check**  
    - A post is a duplicate if **both** `content` and `date` match an existing entry.  
-   - If duplicate: exit with `{ "status": "duplicate‑skipped" }`.
+   - If duplicate: exit with `{{ "status": "duplicate‑skipped" }}`.
 
 3. **Determine `date`**  
    - Use `selected_post.timestamp` if valid ISO‑8601 string.  
@@ -71,11 +62,11 @@ Archiver receives one JSON object named `selected_post`:
 
 5. **Compose Record**  
    ```python
-   new_entry = {
+   new_entry = {{
        "date": date_str,
        "topic": topic_str,
        "content": selected_post["content"].strip()
-   }
+   }}
    ```
 
 6. **Append & Persist**  
@@ -85,13 +76,13 @@ Archiver receives one JSON object named `selected_post`:
 
 7. **Return Acknowledgement**  
    ```json
-   { "status": "archived", "archive_size": len(db), "file": "archive.json" }
+   {{ "status": "archived", "archive_size": len(db), "file": "archive.json" }}
    ```
 
 ## 6 · Error Handling
 - Wrap all I/O in `try/except`; on failure emit  
   ```json
-  { "error": "<brief message>" }
+  {{ "error": "<brief message>" }}
   ```
 - Never crash or leave a partial file; `write_function` is atomic, so pass full list.
 
