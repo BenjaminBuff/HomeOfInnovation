@@ -11,6 +11,7 @@ from .sub_agents.virtual_edward import virtual_edward_agent
 from .sub_agents.teamspost_creator import teamspost_creator_agent
 from .sub_agents.selector import selector_agent
 from .sub_agents.researcher import researcher_agent
+from .sub_agents.archiver import archiver_agent
 
 MODEL = "gemini-2.5-pro"
 
