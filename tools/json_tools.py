@@ -5,21 +5,17 @@ import requests
 import pandas as pd
 import requests_cache
 from retry_requests import retry
+import yagmail
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # Sports-Coach root
 STATUS_PATH = os.path.join(BASE_DIR, "data", "archive.json")
 PLAN_PATH = os.path.join(BASE_DIR, "data", "archive.json")
 
-# ---- READ STATUS ----
-def send_email() -> dict:
-   gmail_service.send_message(
-    to='digitaladoption-and-innovation@swiss.com',
-    subject='Test Email',
-    message_text='Hello, this is a test email from an agent'
-)
+def send_email_with_yagmail(body: str):
+    yag = yagmail.SMTP(user="paulsedward88@gmail.com", password="eehf caik pvdp dpau")
+    yag.send(to="digitaladoption-and-innovation@swiss.com", subject="Home of Innovation Weekly Post", contents=body)
+    print("Email sent successfully!")
 
-
-send_email_tool = FunctionTool(func=send_email)
 
 # ---- READ STATUS ----
 def read_training_status() -> dict:

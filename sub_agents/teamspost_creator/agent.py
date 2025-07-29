@@ -2,7 +2,7 @@
 
 from google.adk import Agent
 from google.adk.tools import google_search
-from ...tools.json_tools import send_email_tool
+from ...tools.json_tools import send_email_with_yagmail
 
 from . import prompt
 
@@ -15,6 +15,6 @@ teamspost_creator_agent = Agent(
     instruction=prompt.TEAMSPOST_CREATOR_PROMPT,
     output_key="teamspost",
     tools=[
-        send_email_tool
+        send_email_with_yagmail
     ],
 )
