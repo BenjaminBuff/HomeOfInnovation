@@ -1,10 +1,5 @@
 import json, os
 from google.adk.tools.function_tool import FunctionTool
-import openmeteo_requests
-import requests
-import pandas as pd
-import requests_cache
-from retry_requests import retry
 import yagmail
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # Sports-Coach root
